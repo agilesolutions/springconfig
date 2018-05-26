@@ -1,4 +1,12 @@
 server:
   port: 8081
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    baseUrl: http://zipkin-server:9411/
+    sender:
+      type: web  
 user:
   role: Developer
