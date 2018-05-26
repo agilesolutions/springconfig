@@ -1,0 +1,10 @@
+server:
+  port: 9411
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    baseUrl: http://zipkin-server:9411/
+    sender:
+      type: web
